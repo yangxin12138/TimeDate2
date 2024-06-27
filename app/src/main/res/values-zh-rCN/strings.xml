@@ -571,4 +571,10 @@ Example: 24"</string>
     <string name="time_zone_Auckland">奥克兰</string>
     <string name="time_zone_Fiji">斐济</string>
     <string name="time_zone_Tongatapu">东加塔布</string>
+
+    <string name="time_usenettime">使用网络时间</string>
+    <string name="time_settime">时间设置</string>
+    <string name="time_setdate">日期设置</string>
+    <string name="time_use24hours">24小时制</string>
+    <string name="time_settimezone">时区</string>
 </resources>

@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="选择时间"
+        android:text="@string/time_settime"
         android:textSize="18sp"
         android:textColor="@android:color/black" />
     <TimePicker

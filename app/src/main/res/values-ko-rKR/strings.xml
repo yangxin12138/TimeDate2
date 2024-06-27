@@ -238,4 +238,10 @@
     <string name="size_adjustment_control_info">확대 및 축소하는 왼쪽 및 오른쪽 키</string>
     <string name="network_available_title">사용 가능한 네트워크</string>
     <string name="projector_auto_title">자동 투영</string>
+
+    <string name="time_usenettime">네트워크 시간 사용</string>
+    <string name="time_settime">시간</string>
+    <string name="time_setdate">날짜</string>
+    <string name="time_use24hours">24시간 형식을 사용하세요</string>
+    <string name="time_settimezone">시간대</string>
 </resources>

@@ -238,4 +238,10 @@ Clique em [Tentar novamente] para emparelhar novamente o controle remoto Bluetoo
     <string name="size_adjustment_control_info">Teclas esquerda e direita para aumentar e diminuir o zoom</string>
     <string name="network_available_title">Redes disponíveis</string>
     <string name="projector_auto_title">Projeção automática</string>
+
+    <string name="time_usenettime">Usar horário de rede</string>
+    <string name="time_settime">Tempo</string>
+    <string name="time_setdate">Data</string>
+    <string name="time_use24hours">Usar formato de 24 horas</string>
+    <string name="time_settimezone">Fuso horário</string>
 </resources>

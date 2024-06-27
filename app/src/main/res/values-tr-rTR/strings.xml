@@ -239,4 +239,10 @@ Bluetooth uzaktan kumandayı yeniden eşleştirmek için lütfen [Tekrar Dene] �
     <string name="size_adjustment_control_info">Yakınlaştırmak ve uzaklaştırmak için sol ve sağ tuşlar</string>
     <string name="network_available_title">Mevcut ağlar</string>
     <string name="projector_auto_title">Otomatik Projeksiyon</string>
+
+    <string name="time_usenettime">Ağ Zamanını Kullan</string>
+    <string name="time_settime">Zaman</string>
+    <string name="time_setdate">Tarih</string>
+    <string name="time_use24hours">24 saat biçimini kullan</string>
+    <string name="time_settimezone">Saat dilimi</string>
 </resources>

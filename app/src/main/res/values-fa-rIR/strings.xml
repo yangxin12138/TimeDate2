@@ -239,4 +239,10 @@
     <string name="size_adjustment_control_info">کلیدهای چپ و راست برای بزرگنمایی و بزرگنمایی</string>
     <string name="network_available_title">شبکه های موجود</string>
     <string name="projector_auto_title">پروجکشن خودکار</string>
+
+    <string name="time_usenettime">از زمان شبکه استفاده کنید</string>
+    <string name="time_settime">زمان</string>
+    <string name="time_setdate">تاریخ</string>
+    <string name="time_use24hours">از قالب 24 ساعته استفاده کنید</string>
+    <string name="time_settimezone">منطقه زمانی</string>
 </resources>

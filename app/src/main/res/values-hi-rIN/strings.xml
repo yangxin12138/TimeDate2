@@ -239,4 +239,10 @@
     <string name="size_adjustment_control_info">ज़ूम इन और ज़ूम आउट करने के लिए बाएँ और दाएँ कुंजियों का उपयोग करे</string>
     <string name="network_available_title">उपलब्ध नेटवर्क</string>
     <string name="projector_auto_title">ऑटो प्रोजेक्शन</string>
+
+    <string name="time_usenettime">नेटवर्क समय का उपयोग करें</string>
+    <string name="time_settime">समय</string>
+    <string name="time_setdate">तारीख</string>
+    <string name="time_use24hours">24 घंटे का प्रारूप उपयोग करें</string>
+    <string name="time_settimezone">समय क्षेत्र</string>
 </resources>

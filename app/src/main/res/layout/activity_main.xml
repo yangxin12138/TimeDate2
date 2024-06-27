@@ -51,7 +51,7 @@
                 android:layout_width="0dp"
                 android:layout_weight="6"
                 android:layout_height="match_parent"
-                android:text="使用网络时间"
+                android:text="@string/time_usenettime"
                 android:textColor="?textColor"
                 android:textSize="30sp"
                 android:duplicateParentState="true"
@@ -86,7 +86,7 @@
                 android:layout_weight="6"
                 android:layout_height="match_parent"
                 android:textColor="?textColor"
-                android:text="设置时间"
+                android:text="@string/time_settime"
                 android:duplicateParentState="true"
                 android:textSize="30sp"/>
             <TextView
@@ -116,7 +116,7 @@
                 android:layout_weight="6"
                 android:layout_height="match_parent"
                 android:textColor="?textColor"
-                android:text="设置日期"
+                android:text="@string/time_setdate"
                 android:duplicateParentState="true"
                 android:textSize="30sp"/>
             <TextView
@@ -148,7 +148,7 @@
                 android:layout_weight="6"
                 android:layout_height="match_parent"
                 android:textColor="?textColor"
-                android:text="使用24小时制"
+                android:text="@string/time_use24hours"
                 android:duplicateParentState="true"
                 android:textSize="30sp"
                 android:gravity="center_vertical"/>
@@ -182,7 +182,7 @@
                 android:layout_weight="6"
                 android:layout_height="match_parent"
                 android:textColor="?textColor"
-                android:text="设置时区"
+                android:text="@string/time_settimezone"
                 android:duplicateParentState="true"
                 android:textSize="30sp"
                 android:gravity="center_vertical"/>

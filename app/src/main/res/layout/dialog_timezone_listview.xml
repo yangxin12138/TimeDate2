@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="选择时区"
+        android:text="@string/time_settimezone"
         android:textSize="28sp"
         android:textColor="@android:color/black" />
     <ListView

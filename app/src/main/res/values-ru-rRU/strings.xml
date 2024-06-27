@@ -237,4 +237,10 @@
     <string name="size_adjustment_control_info">Клавиши влево и вправо для увеличения и уменьшения масштаба</string>
     <string name="network_available_title">Доступные сети</string>
     <string name="projector_auto_title">Автоматическое проецирование</string>
+
+    <string name="time_usenettime">Использовать сетевое время</string>
+    <string name="time_settime">Время</string>
+    <string name="time_setdate">Дата</string>
+    <string name="time_use24hours">Используйте 24-часовой формат</string>
+    <string name="time_settimezone">Часовой пояс</string>
 </resources>

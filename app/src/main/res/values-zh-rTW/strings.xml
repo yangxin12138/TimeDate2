@@ -238,4 +238,10 @@
     <string name="size_adjustment_control_info">左右鍵縮放尺寸</string>
     <string name="network_available_title">可用網路</string>
     <string name="projector_auto_title">自動投影</string>
+
+    <string name="time_usenettime">使用網路時間</string>
+    <string name="time_settime">時間設定</string>
+    <string name="time_setdate">日期設定</string>
+    <string name="time_use24hours">24小時格式</string>
+    <string name="time_settimezone">時區</string>
 </resources>

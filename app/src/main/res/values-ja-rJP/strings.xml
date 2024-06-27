@@ -237,4 +237,10 @@
     <string name="size_adjustment_control_info">左右のキーでズームインおよびズームアウトします</string>
     <string name="network_available_title">利用可能なネットワーク</string>
     <string name="projector_auto_title">自動投影</string>
+
+    <string name="time_usenettime">ネットワーク時間を使用する</string>
+    <string name="time_settime">時間</string>
+    <string name="time_setdate">日付</string>
+    <string name="time_use24hours">24時間形式を使用する</string>
+    <string name="time_settimezone">タイムゾーン</string>
 </resources>

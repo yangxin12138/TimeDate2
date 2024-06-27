@@ -100,4 +100,10 @@
 
     <string name="network_available_title">Available Networks</string>
     <string name="projector_auto_title">Auto Projection</string>
+
+    <string name="time_usenettime">Use Network Time</string>
+    <string name="time_settime">Time</string>
+    <string name="time_setdate">Date</string>
+    <string name="time_use24hours">Use 24-hour format</string>
+    <string name="time_settimezone">TimeZone</string>
 </resources>

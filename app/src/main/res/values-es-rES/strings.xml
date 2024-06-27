@@ -239,4 +239,11 @@ Haga clic en [Intentar de nuevo] para volver a emparejar el control remoto Bluet
     <string name="size_adjustment_control_info">Teclas izquierda y derecha para acercar y alejar</string>
     <string name="network_available_title">Redes disponibles</string>
     <string name="projector_auto_title">Proyección automática</string>
+
+
+    <string name="time_usenettime">Usar tiempo de red</string>
+    <string name="time_settime">Tiempo</string>
+    <string name="time_setdate">Fecha</string>
+    <string name="time_use24hours">Usar el formato de 24 horas</string>
+    <string name="time_settimezone">Zona horaria</string>
 </resources>

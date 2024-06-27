@@ -239,4 +239,11 @@ Fare clic su [Riprova] per riassociare il telecomando Bluetooth."</string>
     <string name="size_adjustment_control_info">Tasti sinistra e destra per ingrandire e rimpicciolire</string>
     <string name="network_available_title">Reti disponibili</string>
     <string name="projector_auto_title">Proiezione automatica</string>
+
+
+    <string name="time_usenettime">Utilizza l\'ora della rete</string>
+    <string name="time_settime">Tempo</string>
+    <string name="time_setdate">Data</string>
+    <string name="time_use24hours">Utilizza il formato 24 ore</string>
+    <string name="time_settimezone">Fuso orario</string>
 </resources>

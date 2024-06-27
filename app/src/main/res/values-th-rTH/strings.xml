@@ -240,4 +240,10 @@
     <string name="size_adjustment_control_info">ปุ่มซ้ายและขวาเพื่อซูมเข้าและออก</string>
     <string name="network_available_title">เครือข่ายที่มีอยู่</string>
     <string name="projector_auto_title">การฉายภาพอัตโนมัติ</string>
+
+    <string name="time_usenettime">ใช้เวลาเครือข่าย</string>
+    <string name="time_settime">เวลา</string>
+    <string name="time_setdate">วันที่</string>
+    <string name="time_use24hours">ใช้รูปแบบ 24 ชั่วโมง</string>
+    <string name="time_settimezone">เขตเวลา</string>
 </resources>
