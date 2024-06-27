@@ -88,6 +88,7 @@
                 android:textColor="?textColor"
                 android:text="@string/time_settime"
                 android:duplicateParentState="true"
+                android:gravity="center_vertical"
                 android:textSize="30sp"/>
             <TextView
                 android:id="@+id/time_summary"
@@ -118,6 +119,7 @@
                 android:textColor="?textColor"
                 android:text="@string/time_setdate"
                 android:duplicateParentState="true"
+                android:gravity="center_vertical"
                 android:textSize="30sp"/>
             <TextView
                 android:id="@+id/date_summary"
