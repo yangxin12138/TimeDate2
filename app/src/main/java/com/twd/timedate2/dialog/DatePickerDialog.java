@@ -17,6 +17,7 @@ import com.twd.timedate2.R;
 import com.twd.timedate2.interfaces.DateSelectedInterface;
 
 import java.util.Calendar;
+import java.util.Locale;
 
 /**
  * @Author:Yangxin
@@ -62,8 +63,7 @@ public class DatePickerDialog extends Dialog implements View.OnClickListener, Vi
         NumberPicker yearPicker = ((NumberPicker) ((ViewGroup) ((ViewGroup) datePicker.getChildAt(0)).getChildAt(0)).getChildAt(0));
         NumberPicker monthPicker = ((NumberPicker) ((ViewGroup) ((ViewGroup) datePicker.getChildAt(0)).getChildAt(0)).getChildAt(1));
         NumberPicker dayPicker = ((NumberPicker) ((ViewGroup) ((ViewGroup) datePicker.getChildAt(0)).getChildAt(0)).getChildAt(2));
-        ((NumberPicker) ((ViewGroup) ((ViewGroup) datePicker.getChildAt(0)).getChildAt(0)).getChildAt(0)).setDisplayedValues(months);
-
+       // ((NumberPicker) ((ViewGroup) ((ViewGroup) datePicker.getChildAt(0)).getChildAt(0)).getChildAt(0)).setDisplayedValues(months);
         datePicker.setCalendarViewShown(false);//隐藏日历视图
         datePicker.setDescendantFocusability(ViewGroup.FOCUS_AFTER_DESCENDANTS);
 
@@ -73,12 +73,26 @@ public class DatePickerDialog extends Dialog implements View.OnClickListener, Vi
         int month = calendar.get(Calendar.MONTH); // 注意，Calendar.MONTH从0开始，即0代表1月
         int day = calendar.get(Calendar.DAY_OF_MONTH);
 
+        Locale currentLocale = mContext.getResources().getConfiguration().locale;
+        if (currentLocale.equals(Locale.US)){
+            // 获取DatePicker的年、月、日子控件视图 月/日/年
+            Log.i(TAG, "onCreate: 走美国 月日年");
+            ((NumberPicker) ((ViewGroup) ((ViewGroup) datePicker.getChildAt(0)).getChildAt(0)).getChildAt(0)).setDisplayedValues(months);
+        }else { //年/月/日
+            Log.i(TAG, "onCreate: 走其他 年月日");
+            ((NumberPicker) ((ViewGroup) ((ViewGroup) datePicker.getChildAt(0)).getChildAt(0)).getChildAt(1)).setDisplayedValues(months);
+        }
         selectDate = String.format("%04d/%02d/%02d", year, month + 1, day);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
             datePicker.setOnDateChangedListener(new DatePicker.OnDateChangedListener() {
                 @Override
                 public void onDateChanged(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
-                    ((NumberPicker) ((ViewGroup) ((ViewGroup) datePicker.getChildAt(0)).getChildAt(0)).getChildAt(0)).setDisplayedValues(months);
+                    if (currentLocale.equals(Locale.US)){
+                        ((NumberPicker) ((ViewGroup) ((ViewGroup) datePicker.getChildAt(0)).getChildAt(0)).getChildAt(0)).setDisplayedValues(months);
+                    }else {
+                        ((NumberPicker) ((ViewGroup) ((ViewGroup) datePicker.getChildAt(0)).getChildAt(0)).getChildAt(1)).setDisplayedValues(months);
+                    }
+                    //((NumberPicker) ((ViewGroup) ((ViewGroup) datePicker.getChildAt(0)).getChildAt(0)).getChildAt(0)).setDisplayedValues(months);
                     int displayMonth = monthOfYear + 1;
                     selectDate = String.format("%04d/%02d/%02d",year,displayMonth ,dayOfMonth);
                     Log.i(TAG, "onDateChanged: 日期是 = "+selectDate);
