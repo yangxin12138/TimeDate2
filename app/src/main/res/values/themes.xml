@@ -40,6 +40,8 @@
         <item name="storage_appcolor">@color/storage_charts_iceblue_app</item>
         <item name="storage_othercolor">@color/storage_charts_iceblue_other</item>
         <item name="factory_textColor">@color/selector_factory_textcolor</item>
+        <item name="switch_thumb">@drawable/selector_switch_thumb_white</item>
+        <item name="switch_track">@drawable/selector_switch_bg_lightblue_gray</item>
     </style>
 
     <!--木棉白-->
@@ -111,5 +113,7 @@
         <item name="storage_appcolor">@color/storage_charts_starblue_app</item>
         <item name="storage_othercolor">@color/storage_charts_starblue_other</item>
         <item name="factory_textColor">@color/selector_factory_textcolor</item>
+        <item name="switch_thumb">@drawable/selector_switch_thumb_white</item>
+        <item name="switch_track">@drawable/selector_switch_bg_blue_gray</item>
     </style>
 </resources>

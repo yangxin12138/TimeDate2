@@ -33,7 +33,7 @@ import java.util.TimeZone;
 
 public class MainActivity extends AppCompatActivity  implements View.OnClickListener ,
         TimeSelectedInterface, DateSelectedInterface
-        , OnTimeZoneSelectedListener {
+        , OnTimeZoneSelectedListener , View.OnFocusChangeListener {
     private final static String TAG = MainActivity.class.getSimpleName();
 
     private DateTimeUtils utils;
@@ -54,8 +54,8 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
     private Handler timerHandler = new Handler();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        this.setTheme(R.style.Theme_IceBlue);
         super.onCreate(savedInstanceState);
-        this.setTheme(R.style.Theme_KapokWhite);
         setContentView(R.layout.activity_main);
         utils = new DateTimeUtils(this);
         initView();
@@ -93,15 +93,7 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
         LL_timeZone.setOnClickListener(this);
         LL_TimeSwitch.requestFocus();
 
-        if (switch_time.isChecked()){
-            time_title.setTextColor(getResources().getColor(R.color.auto_time_checked)); time_summary.setTextColor(getResources().getColor(R.color.auto_time_checked));
-            date_title.setTextColor(getResources().getColor(R.color.auto_time_checked));  date_summary.setTextColor(getResources().getColor(R.color.auto_time_checked));
-            LL_Time.setFocusable(false); LL_Date.setFocusable(false);
-        }else {
-            time_title.setTextColor(getResources().getColor(R.color.black)); time_summary.setTextColor(getResources().getColor(R.color.index_summary));
-            date_title.setTextColor(getResources().getColor(R.color.black)); date_summary.setTextColor(getResources().getColor(R.color.index_summary));
-            LL_Time.setFocusable(true); LL_Date.setFocusable(true);
-        }
+        refreshSwitch();
 
         switch_time.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
@@ -181,15 +173,7 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
             showTimeDialog();
         }else if (v.getId() == R.id.LL_TimeSwitch){
             switch_time.setChecked(!switch_time.isChecked());
-            if (switch_time.isChecked()){
-                time_title.setTextColor(getResources().getColor(R.color.auto_time_checked)); time_summary.setTextColor(getResources().getColor(R.color.auto_time_checked));
-                date_title.setTextColor(getResources().getColor(R.color.auto_time_checked)); date_summary.setTextColor(getResources().getColor(R.color.auto_time_checked));
-                LL_Time.setFocusable(false); LL_Date.setFocusable(false);
-            }else {
-                time_title.setTextColor(getResources().getColor(R.color.black)); time_summary.setTextColor(getResources().getColor(R.color.index_summary));
-                date_title.setTextColor(getResources().getColor(R.color.black)); date_summary.setTextColor(getResources().getColor(R.color.index_summary));
-                LL_Time.setFocusable(true); LL_Date.setFocusable(true);
-            }
+            refreshSwitch();
         } else if (v.getId() == R.id.LL_is24Hours) {
             switch_24Hours.setChecked(!switch_24Hours.isChecked());
         } else if (v.getId() == R.id.LL_Date) {
@@ -199,6 +183,19 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
         }
     }
 
+    private void refreshSwitch(){
+        if (switch_time.isChecked()){
+            time_title.setTextColor(getResources().getColor(R.color.auto_time_checked)); time_summary.setTextColor(getResources().getColor(R.color.auto_time_checked));
+            date_title.setTextColor(getResources().getColor(R.color.auto_time_checked));  date_summary.setTextColor(getResources().getColor(R.color.auto_time_checked));
+            LL_Time.setFocusable(false); LL_Date.setFocusable(false);
+            LL_Time.setOnFocusChangeListener(null); LL_Date.setOnFocusChangeListener(null);
+        }else {
+            time_title.setTextColor(getResources().getColor(R.color.white)); time_summary.setTextColor(getResources().getColor(R.color.white));
+            date_title.setTextColor(getResources().getColor(R.color.white));  date_summary.setTextColor(getResources().getColor(R.color.white));
+            LL_Time.setFocusable(true); LL_Date.setFocusable(true);
+            LL_Time.setOnFocusChangeListener(this); LL_Date.setOnFocusChangeListener(this);
+        }
+    }
     private void showTimeDialog(){
         TimePickerDialog dialog = new TimePickerDialog(this,this);
         dialog.show();
@@ -299,6 +296,22 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
             time_summary.setText(time);
         }catch (ParseException e){
             e.printStackTrace();
+        }
+    }
+
+    @Override
+    public void onFocusChange(View v, boolean hasFocus) {
+        int color = hasFocus ? R.color.sel_blue : R.color.white;
+        setTextViewColor(v, color);
+    }
+
+    private void setTextViewColor(View view, int color) {
+        if (view.getId() == R.id.LL_Time) {
+            time_title.setTextColor(getResources().getColor(color));
+            time_summary.setTextColor(getResources().getColor(color));
+        } else if (view.getId() == R.id.LL_Date) {
+            date_title.setTextColor(getResources().getColor(color));
+            date_summary.setTextColor(getResources().getColor(color));
         }
     }
 }

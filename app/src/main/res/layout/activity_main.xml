@@ -98,7 +98,7 @@
                 android:gravity="center"
                 android:text="08:00 AM"
                 android:textSize="30sp"
-                android:textColor="@color/index_summary" />
+                android:textColor="?textColor" />
         </LinearLayout>
         <LinearLayout
             android:id="@+id/LL_Date"
@@ -129,7 +129,7 @@
                 android:layout_height="match_parent"
                 android:text="1997/01/01"
                 android:textSize="25sp"
-                android:textColor="@color/index_summary" />
+                android:textColor="?textColor" />
         </LinearLayout>
 
         <LinearLayout
@@ -193,10 +193,11 @@
                 android:layout_width="0dp"
                 android:layout_weight="6"
                 android:layout_height="match_parent"
+                android:duplicateParentState="true"
                 android:text=""
                 android:gravity="center"
                 android:textSize="15sp"
-                android:textColor="@color/index_timezone_summary" />
+                android:textColor="?textColor" />
         </LinearLayout>
     </LinearLayout>
 
