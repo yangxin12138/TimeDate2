@@ -571,6 +571,8 @@ Example: 24"</string>
     <string name="time_zone_Auckland">Auckland</string>
     <string name="time_zone_Fiji">Fiji</string>
     <string name="time_zone_Tongatapu">Brisbane</string>
+    <string name="time_zone_Madrid">Madrid</string>
+
 
     <!--Time&Date-->
     <string name="time_usenettime">Use Network Time</string>

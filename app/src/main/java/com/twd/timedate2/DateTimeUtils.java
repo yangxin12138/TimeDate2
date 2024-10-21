@@ -129,7 +129,7 @@ public class DateTimeUtils {
         timeZoneDisplayNames.put("Pacific/Auckland",mContext.getString(R.string.time_zone_Auckland)); //奥克兰
         timeZoneDisplayNames.put("Pacific/Fiji",mContext.getString(R.string.time_zone_Fiji)); //斐济
         timeZoneDisplayNames.put("Pacific/Tongatapu",mContext.getString(R.string.time_zone_Tongatapu)); //东加塔布
-
+        timeZoneDisplayNames.put("Europe/Madrid", mContext.getString(R.string.time_zone_Madrid));//西班牙马德里
         return timeZoneDisplayNames;
     }
 }
