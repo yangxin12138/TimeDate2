@@ -38,6 +38,7 @@ public class TimeZoneAdapter  extends BaseAdapter {
         this.context = context;
         this.timeZoneIds = timeZoneIds;
         keyset = new ArrayList<>(timeZoneIds.keySet());
+        sortTimeZonesByOffset();
     }
 
     @Override
@@ -86,5 +87,25 @@ public class TimeZoneAdapter  extends BaseAdapter {
         int offsetMinutes = (offsetMillis % 3600000) / 60000; // 余下的毫秒转换为分钟
         // 使用String.format()方法格式化为 "GMT+HH:mm" 形式
         return String.format("GMT%+03d:%02d", offsetHours, offsetMinutes);
+    }
+
+    //按照时区偏移量从小到大排序的方法
+    private void sortTimeZonesByOffset(){
+        for (int i = 0; i< keyset.size() -1;i++){
+            for (int j = i+1; j< keyset.size();j++){
+                String zoneId1 =keyset.get(i);
+                String zoneId2 = keyset.get(j);
+                TimeZone tz1 = TimeZone.getTimeZone(zoneId1);
+                TimeZone tz2 = TimeZone.getTimeZone(zoneId2);
+                int offset1 = tz1.getRawOffset();
+                int offset2 = tz2.getRawOffset();
+                if (offset1 > offset2) {
+                    // 交换位置
+                    String temp = keyset.get(i);
+                    keyset.set(i, keyset.get(j));
+                    keyset.set(j, temp);
+                }
+            }
+        }
     }
 }
