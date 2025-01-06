@@ -101,4 +101,17 @@
     <dimen name="universal_content_LL_paddingEnd">150dp</dimen>
     <dimen name="universal_time_LL_height">70dp</dimen>
     <dimen name="time_text_size">30sp</dimen>
+    <dimen name="universal_title_iv_width">25dp</dimen>
+    <dimen name="universal_title_iv_height">25dp</dimen>
+    <dimen name="universal_title_tv_textSize">25sp</dimen>
+    <dimen name="universal_title_marginTop">35dp</dimen>
+    <dimen name="universal_title_iv_marginStart">80dp</dimen>
+    <dimen name="LL_content_paddingStart">50dp</dimen>
+    <dimen name="switch_paddingEnd">30dp</dimen>
+    <dimen name="switch_height">21.0dip</dimen>
+    <dimen name="switch_width">41.0dip</dimen>
+    <dimen name="item_lr_line_width">2.0dip</dimen>
+    <dimen name="switch_thumb_padding">6.0dip</dimen>
+    <dimen name="timeZone_summary">15sp</dimen>
+    <dimen name="LL_content_marginTop">10dp</dimen>
 </resources>
