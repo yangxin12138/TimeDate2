@@ -15,7 +15,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="@string/time_settime"
-        android:textSize="18sp"
+        android:textSize="@dimen/time_dialog_text_size"
         android:textColor="@android:color/black" />
     <TimePicker
         android:id="@+id/timePicker"

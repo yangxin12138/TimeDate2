@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
-    android:padding="10dp"
+    android:padding="@dimen/timezone_list_item_padding"
     android:id="@+id/time_zone_root"
     android:clickable="true">
 
@@ -14,8 +14,8 @@
         android:layout_height="wrap_content"
         android:layout_weight="5"
         android:text="时区名称"
-        android:textSize="28sp"
-        android:paddingStart="20dp"/>
+        android:textSize="@dimen/timezone_dialog_title_text_size"
+        android:paddingStart="@dimen/timezone_list_item_paddingStart"/>
 
     <!-- 时区偏移量TextView -->
     <TextView
@@ -24,9 +24,9 @@
         android:layout_height="wrap_content"
         android:layout_weight="2"
         android:text="时区偏移量"
-        android:textSize="28sp"
-        android:paddingStart="16dp"
-        android:paddingLeft="16dp"
+        android:textSize="@dimen/timezone_dialog_title_text_size"
+        android:paddingStart="@dimen/timezone_list_item_offset_paddingStart"
+        android:paddingLeft="@dimen/timezone_list_item_offset_paddingEnd"
         android:layout_gravity="right"/>
 
 </LinearLayout>

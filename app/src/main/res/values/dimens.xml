@@ -817,4 +817,12 @@
     <dimen name="switch_paddingEnd">30dp</dimen>
     <dimen name="timeZone_summary">15sp</dimen>
     <dimen name="LL_content_marginTop">10dp</dimen>
+    <dimen name="time_dialog_text_size">18sp</dimen>
+    <dimen name="timezone_dialog_padding">16dp</dimen>
+    <dimen name="timezone_dialog_title_text_size">28sp</dimen>
+    <dimen name="timezone_dialog_list_width">800dp</dimen>
+    <dimen name="timezone_list_item_padding">10dp</dimen>
+    <dimen name="timezone_list_item_paddingStart">20dp</dimen>
+    <dimen name="timezone_list_item_offset_paddingStart">16dp</dimen>
+    <dimen name="timezone_list_item_offset_paddingEnd">16dp</dimen>
 </resources>
