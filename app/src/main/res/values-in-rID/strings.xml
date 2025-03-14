@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="time_usenettime">Gunakan waktu jaringan</string>
+    <string name="time_settime">Waktu</string>
+    <string name="time_setdate">Tanggal</string>
+    <string name="time_use24hours">Gunakan format 24 jam</string>
+    <string name="time_settimezone">Zona waktu</string>
+</resources>
