@@ -49,13 +49,14 @@
             <TextView
                 android:id="@+id/time_switch"
                 android:layout_width="0dp"
-                android:layout_weight="6"
                 android:layout_height="match_parent"
+                android:layout_weight="6"
+                android:duplicateParentState="true"
+                android:gravity="center_vertical"
                 android:text="@string/time_usenettime"
                 android:textColor="?textColor"
-                android:textSize="@dimen/time_text_size"
-                android:duplicateParentState="true"
-                android:gravity="center_vertical"/>
+                android:textSize="@dimen/time_text_size" />
+
             <androidx.appcompat.widget.SwitchCompat
                 android:id="@+id/switch_auto"
                 android:layout_width="0dp"
